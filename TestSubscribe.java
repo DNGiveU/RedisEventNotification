@@ -25,7 +25,7 @@ public class TestSubscribe {
         // jedis.psubscribe(listener, "__keyevent@0__:del");  
         // jedis.psubscribe(listener, "__keyspace@0__:del");  
         // jedis.psubscribe(listener, "__key*__:*");  
-        // 监听
+        // 监听并阻塞
         jedis.psubscribe(listener, "__keyevent@0__:expired");  
         //other code  
     }  
